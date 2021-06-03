@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&family=Saira+Extra+Condensed:wght@500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Joshua Bas - Portfolio</title>
+</head>
+<body>
+   
+   <div class="sidebar-wrapper">
+       <header>
+          <div class="profile">
+              <img src="assets/profile.jpeg">
+          </div>
+           <nav class="navbar">
+               <ul>
+                   <li><a href="#about">About</a></li>
+                   <li><a href="#experiences">Experience</a></li>
+                   <li><a href="#education">Education</a></li>
+                   <li><a href="#skills">Skills</a></li>
+                   <li><a href="#publications">Publications</a></li>
+                   <li><a href="#interests">Interests</a></li>
+               </ul>
+           </nav>
+       </header>
+   </div>
+   
+   <div class="content-wrapper">
+       <div class="inner-wrapper">
+           <div class="section" id="about">
+              <div class="contact">
+                  <h1>Joshua <span>Bas</span></h1>
+                  <h2>(704) 978-9370 · <span><a href="mailto:joshua.n.bas@gmail.com">JOSHUA.N.BAS@GMAIL.COM</a></span> · <span><a href="mailto:jnbas@alumni.cmu.edu">JNBAS@alumni.CMU.EDU</a></span></h2> 
+              </div>
+              <div class="blurb">
+                 Heyo! I am a recent graduate from CMU and interested in that middle-ground between software and hardware, although lately I've been taking on hardware projects. I've had experience working with C/C++, Python, and some other high-level programming languages, and on the other side of the abstraction, I'm also developing my skills in ARM Assembly, RISC-V Assembly, and reading ISAs. I think FPGA's are pretty cool, and I get excited whenever I have the chance to use them. I've spent a summer and a semester honing my PCB design skills through a medical device internship, and I expect to continue to do so in future projects!
+              </div>
+           </div>
+           <div class="section" id="experiences">
+              <h1>Experience</h1>
+              <div class="section-wrapper">
+                  <div class="section-content">
+                      <h2>3D PRINTING ERROR DETECTION SYSTEM</h2>
+                      <h3>Capstone Project</h3>
+                      My capstone group and I are building a detection system for 3D prints this semester! I'm in charge of the power management subsystem for the single board computer (SBC), and I also help out with embedded programming! <!--Here's the link to the capstone blog for continuous updates! -->
+                  </div>
+                  <div class="section-date">
+                   January 2020 - May 2020
+                  </div>
+               </div>
+               
+               <div class="section-wrapper">
+                  <div class="section-content">
+                      <h2>Audition Technology</h2>
+                      <h3>Analog Engineer Intern</h3>
+                      In my role as analog engineer intern at Audition Technology, I have gained experience in the development cycle. Most of my internship during the summer months focused on researching and comparing DSP chips the startup can incorporate into its first prototype. In addition to communicating with the DSP team, I created a list of requirements to design a custom development board, which was realized using EagleCAD. After learning from my mistakes on this first board, I proposed, designed, and implemented a modular system where the "motherboard" contained the power management system and the IO breakout pins, while the "daughterboard" contained the specific chip to be tested. During this internship, I also learned more about the Bluetooth Low Energy technology available for small medical devices, and more generally about the hearing aid medical industry. Aside from employing technical skills, I participated in meetings with the CFOs and medical advisor, and also partook in a tour of the facilities of a potential manufacturer.
+                  </div>
+                  <div class="section-date">
+                   June 2019 - May 2020
+                  </div>
+               </div>
+               
+               <div class="section-wrapper">
+                  <div class="section-content">
+                      <h2>CMU Mars Ice</h2>
+                      <h3>Club Project</h3>
+                      My involvement in the design of the CMU drilling robot for the NASA Mars Ice Challenge includes creating design blocks in EagleCAD as well as selecting and testing components; this culminated in my design and assembly of the robot's encoder interface pcb. I also spearheaded the design and development of the software that controlled and monitored the robot (everything in src/ except client-side code). This included interfacing with the robot's thermometer, ammeter, water level sensor, force sensor, and encoder data. Some challenges encountered during the software development included only having about 3 weeks to implement, unit test, and integration test; however, we were able to produce a minimum viable product that successfully interpreted and executed a subset of our desired commands.
+                  </div>
+                  <div class="section-date">
+                   October 2018 - June 2019
+                  </div>
+               </div>
+               
+               <div class="section-wrapper">
+                  <div class="section-content">
+                      <h2>SDRAM Controller</h2>
+                      <h3>Logic Design and Verification Lab</h3>
+                      I designed a memory controller for the 64MB, 4-banked IS42S16320D SDRAM in SystemVerilog, using VCS and Altera Quartus to debug and download onto the Cyclone V FPGA.
+                  </div>
+                  <div class="section-date">
+                    November 2018 
+                  </div>
+               </div>
+               
+               <div class="section-wrapper">
+                  <div class="section-content">
+                      <h2>Tiny Shell Implementation</h2>
+                      <h3>Intro to Computer Systems Lab</h3>
+                      I implemented a tiny shell capable of command execution, foreground and background jobs, and IO redirection.
+                  </div>
+                  <div class="section-date">
+                    July 2018 
+                  </div>
+               </div>
+               
+               <div class="section-wrapper">
+                  <div class="section-content">
+                      <h2>Malloc Implementation</h2>
+                      <h3>Intro to Computer Systems Lab</h3>
+                      I implemented the malloc, calloc, and realloc memory allocation functions in C. My malloc uses a segregated free list and a fitness algorithm that approximates best fit performance.
+                  </div>
+                  <div class="section-date">
+                    July 2018 
+                  </div>
+               </div>
+               
+               <div class="section-wrapper">
+                  <div class="section-content">
+                      <h2>Image Hill Climber</h2>
+                      <h3>Personal Project</h3>
+                      In an effort to learn more about genetic algorithms and hill climber algorithms, I designed a population that attempts to reconstruct a given image from polygons with at least N (user-defined) vertices using a range of RGBA values. Implemented originally in plain Java and later refactored in Processing, the program compares the current and target image on a per-pixel basis. Although I enjoy coming back to this project every so often, after seeing my initial results, I learned that genetic and hill climbing algorithms are not the most efficient nor do they always find global maxima.
+                  </div>
+                  <div class="section-date">
+                    August 2017 
+                  </div>
+               </div>
+               
+           </div>
+           <div class="section" id="education">
+               <h1>Education</h1>
+               <div class="section-wrapper">
+                   <div class="section-content">
+                       <h2>Carnegie Mellon University</h2>
+                       <h3>Pittsburgh, PA</h3>
+                       Bachelor of Science in Electrical & Computer Engineering
+                   </div>
+                   <div class="section-date">
+                    August 2016 - May 2020
+                   </div>
+               </div>
+           </div>
+           <div class="section" id="skills">
+               <h1>Skills</h1>
+               <span>Programming Skills</span>
+               <ul class="skills-blurb">
+                   <li>C/C++</li>
+                   <li>GDB (debugger)</li>
+                   <li>Valgrind (memory debugger)</li>
+                   <li>ARM Assembly</li>
+                   <li>Altera Quartus</li>
+                   <li>Java/Processing</li>
+                   <li>MatLab</li>
+                   <li>Python</li>
+               </ul>
+               
+               <span>Hardware Skills</span>
+               <ul class="skills-blurb">
+                   <li>SystemVerilog</li>
+                   <li>VCS (Verilog simulator)</li>
+                   <li>EagleCAD</li>
+                   <li>circuit analysis</li>
+                   <li>soldering</li>
+                   <li>oscilloscopes & multimeters</li>
+               </ul>
+               
+               <span>Other Skills</span>
+               <ul class="skills-blurb">
+                   <li>Git/Github</li>
+                   <li>SolidWorks</li>
+                   <li>MS Office</li>
+                   <li>Proficient in Spanish</li>
+               </ul>
+           </div>
+           <div class="section" id="publications">
+               <h1>Publications</h1>
+               Development of Hearing Technology with Personalized Safe Listening Features. Gupta, S.; Xu, X.; Liu, H.; Zhang, J.; <span>Bas, J.</span>; Kelly, S. <a href="https://www.itu.int/pub/T-PROC-KALEI-2019">2019 ITU Kaleidoscope Conference Proceedings</a>.
+           </div>
+           <div class="section" id="interests">
+               <h1>Interests</h1>
+               Whenever I am not working hard on projects, I enjoy reading and learning about other cultures, especially how their religions have affected history and society.
+
+               I also make time to help my community and develop my leadership skills. I have taken service trips to the Kusi Orphanage in Yungay, Peru and the Pilar de Esperanza orphanage in Reynosa, Mexico. In the US, I went with Tartan Athlete Fellowship to West Virginia to help rebuild the roof of an elderly woman's home, and have worked in Pittsburgh in my local youth program.
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>
