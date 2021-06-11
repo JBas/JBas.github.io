@@ -3,178 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&family=Saira+Extra+Condensed:wght@500;700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;800&family=Saira+Extra+Condensed:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/v4-shims.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Joshua Bas - Portfolio</title>
 </head>
-<body>
-   
-   <div class="sidebar-wrapper">
-       <header>
-          <div class="profile">
-              <img src="assets/profile.jpeg">
-          </div>
-           <nav class="navbar">
-               <ul>
-                   <li><a href="#about">About</a></li>
-                   <li><a href="#experiences">Experience</a></li>
-                   <li><a href="#education">Education</a></li>
-                   <li><a href="#skills">Skills</a></li>
-                   <li><a href="#publications">Publications</a></li>
-                   <li><a href="#interests">Interests</a></li>
-               </ul>
-           </nav>
-       </header>
-   </div>
-   
-   <div class="content-wrapper">
-       <div class="inner-wrapper">
-           <div class="section" id="about">
-              <div class="contact">
-                  <h1>Joshua <span>Bas</span></h1>
-                  <h2>(704) 978-9370 · <span><a href="mailto:joshua.n.bas@gmail.com">JOSHUA.N.BAS@GMAIL.COM</a></span> · <span><a href="mailto:jnbas@alumni.cmu.edu">JNBAS@alumni.CMU.EDU</a></span></h2> 
-              </div>
-              <div class="blurb">
-                 Heyo! I am a recent graduate from CMU and interested in that middle-ground between software and hardware, although lately I've been taking on hardware projects. I've had experience working with C/C++, Python, and some other high-level programming languages, and on the other side of the abstraction, I'm also developing my skills in ARM Assembly, RISC-V Assembly, and reading ISAs. I think FPGA's are pretty cool, and I get excited whenever I have the chance to use them. I've spent a summer and a semester honing my PCB design skills through a medical device internship, and I expect to continue to do so in future projects!
-              </div>
-           </div>
-           <div class="section" id="experiences">
-              <h1>Experience</h1>
-              <div class="section-wrapper">
-                  <div class="section-content">
-                      <h2>3D PRINTING ERROR DETECTION SYSTEM</h2>
-                      <h3>Capstone Project</h3>
-                      My capstone group and I are building a detection system for 3D prints this semester! I'm in charge of the power management subsystem for the single board computer (SBC), and I also help out with embedded programming! <!--Here's the link to the capstone blog for continuous updates! -->
-                  </div>
-                  <div class="section-date">
-                   January 2020 - May 2020
-                  </div>
-               </div>
-               
-               <div class="section-wrapper">
-                  <div class="section-content">
-                      <h2>Audition Technology</h2>
-                      <h3>Analog Engineer Intern</h3>
-                      In my role as analog engineer intern at Audition Technology, I have gained experience in the development cycle. Most of my internship during the summer months focused on researching and comparing DSP chips the startup can incorporate into its first prototype. In addition to communicating with the DSP team, I created a list of requirements to design a custom development board, which was realized using EagleCAD. After learning from my mistakes on this first board, I proposed, designed, and implemented a modular system where the "motherboard" contained the power management system and the IO breakout pins, while the "daughterboard" contained the specific chip to be tested. During this internship, I also learned more about the Bluetooth Low Energy technology available for small medical devices, and more generally about the hearing aid medical industry. Aside from employing technical skills, I participated in meetings with the CFOs and medical advisor, and also partook in a tour of the facilities of a potential manufacturer.
-                  </div>
-                  <div class="section-date">
-                   June 2019 - May 2020
-                  </div>
-               </div>
-               
-               <div class="section-wrapper">
-                  <div class="section-content">
-                      <h2>CMU Mars Ice</h2>
-                      <h3>Club Project</h3>
-                      My involvement in the design of the CMU drilling robot for the NASA Mars Ice Challenge includes creating design blocks in EagleCAD as well as selecting and testing components; this culminated in my design and assembly of the robot's encoder interface pcb. I also spearheaded the design and development of the software that controlled and monitored the robot (everything in src/ except client-side code). This included interfacing with the robot's thermometer, ammeter, water level sensor, force sensor, and encoder data. Some challenges encountered during the software development included only having about 3 weeks to implement, unit test, and integration test; however, we were able to produce a minimum viable product that successfully interpreted and executed a subset of our desired commands.
-                  </div>
-                  <div class="section-date">
-                   October 2018 - June 2019
-                  </div>
-               </div>
-               
-               <div class="section-wrapper">
-                  <div class="section-content">
-                      <h2>SDRAM Controller</h2>
-                      <h3>Logic Design and Verification Lab</h3>
-                      I designed a memory controller for the 64MB, 4-banked IS42S16320D SDRAM in SystemVerilog, using VCS and Altera Quartus to debug and download onto the Cyclone V FPGA.
-                  </div>
-                  <div class="section-date">
-                    November 2018 
-                  </div>
-               </div>
-               
-               <div class="section-wrapper">
-                  <div class="section-content">
-                      <h2>Tiny Shell Implementation</h2>
-                      <h3>Intro to Computer Systems Lab</h3>
-                      I implemented a tiny shell capable of command execution, foreground and background jobs, and IO redirection.
-                  </div>
-                  <div class="section-date">
-                    July 2018 
-                  </div>
-               </div>
-               
-               <div class="section-wrapper">
-                  <div class="section-content">
-                      <h2>Malloc Implementation</h2>
-                      <h3>Intro to Computer Systems Lab</h3>
-                      I implemented the malloc, calloc, and realloc memory allocation functions in C. My malloc uses a segregated free list and a fitness algorithm that approximates best fit performance.
-                  </div>
-                  <div class="section-date">
-                    July 2018 
-                  </div>
-               </div>
-               
-               <div class="section-wrapper">
-                  <div class="section-content">
-                      <h2>Image Hill Climber</h2>
-                      <h3>Personal Project</h3>
-                      In an effort to learn more about genetic algorithms and hill climber algorithms, I designed a population that attempts to reconstruct a given image from polygons with at least N (user-defined) vertices using a range of RGBA values. Implemented originally in plain Java and later refactored in Processing, the program compares the current and target image on a per-pixel basis. Although I enjoy coming back to this project every so often, after seeing my initial results, I learned that genetic and hill climbing algorithms are not the most efficient nor do they always find global maxima.
-                  </div>
-                  <div class="section-date">
-                    August 2017 
-                  </div>
-               </div>
-               
-           </div>
-           <div class="section" id="education">
-               <h1>Education</h1>
-               <div class="section-wrapper">
-                   <div class="section-content">
-                       <h2>Carnegie Mellon University</h2>
-                       <h3>Pittsburgh, PA</h3>
-                       Bachelor of Science in Electrical & Computer Engineering
-                   </div>
-                   <div class="section-date">
-                    August 2016 - May 2020
-                   </div>
-               </div>
-           </div>
-           <div class="section" id="skills">
-               <h1>Skills</h1>
-               <span>Programming Skills</span>
-               <ul class="skills-blurb">
-                   <li>C/C++</li>
-                   <li>GDB (debugger)</li>
-                   <li>Valgrind (memory debugger)</li>
-                   <li>ARM Assembly</li>
-                   <li>Altera Quartus</li>
-                   <li>Java/Processing</li>
-                   <li>MatLab</li>
-                   <li>Python</li>
-               </ul>
-               
-               <span>Hardware Skills</span>
-               <ul class="skills-blurb">
-                   <li>SystemVerilog</li>
-                   <li>VCS (Verilog simulator)</li>
-                   <li>EagleCAD</li>
-                   <li>circuit analysis</li>
-                   <li>soldering</li>
-                   <li>oscilloscopes & multimeters</li>
-               </ul>
-               
-               <span>Other Skills</span>
-               <ul class="skills-blurb">
-                   <li>Git/Github</li>
-                   <li>SolidWorks</li>
-                   <li>MS Office</li>
-                   <li>Proficient in Spanish</li>
-               </ul>
-           </div>
-           <div class="section" id="publications">
-               <h1>Publications</h1>
-               Development of Hearing Technology with Personalized Safe Listening Features. Gupta, S.; Xu, X.; Liu, H.; Zhang, J.; <span>Bas, J.</span>; Kelly, S. <a href="https://www.itu.int/pub/T-PROC-KALEI-2019">2019 ITU Kaleidoscope Conference Proceedings</a>.
-           </div>
-           <div class="section" id="interests">
-               <h1>Interests</h1>
-               Whenever I am not working hard on projects, I enjoy reading and learning about other cultures, especially how their religions have affected history and society.
 
-               I also make time to help my community and develop my leadership skills. I have taken service trips to the Kusi Orphanage in Yungay, Peru and the Pilar de Esperanza orphanage in Reynosa, Mexico. In the US, I went with Tartan Athlete Fellowship to West Virginia to help rebuild the roof of an elderly woman's home, and have worked in Pittsburgh in my local youth program.
-           </div>
-       </div>
-   </div>
-    
-</body>
-</html>
+<body>
+
+    <div class="sidebar-wrapper">
+        <header>
+            <div class="profile">
+                <img src="assets/profile.jpeg">
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a class="navbar-link navbar-link-hover" href="#about">About</a></li>
+                    <li><a class="navbar-link navbar-link-hover" href="#experiences">Experience</a></li>
+                    <li><a class="navbar-link navbar-link-hover" href="#education">Education</a></li>
+                    <li><a class="navbar-link navbar-link-hover" href="#skills">Skills</a></li>
+                    <li><a class="navbar-link navbar-link-hover" href="#publications">Publications</a></li>
+                    <li><a class="navbar-link navbar-link-hover" href="#interests">Interests</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="content-wrapper">
+        <div class="inner-wrapper">
+            <div class="section" id="about">
+                <div class="contact">
+                    <h1 class="title-h1 secondary-txt-color">Joshua <span class="accent-txt-color">Bas</span></h1>
+                    <h1 class="subtitle-h1 primary-txt-color">(704) 978-9370 · <span><a class="content-link content-link-hover accent-txt-color" href="mailto:joshua.n.bas@gmail.com">JOSHUA.N.BAS@GMAIL.COM</a></span> · <span><a class="content-link content-link-hover accent-txt-color" href="mailto:jnbas@alumni.cmu.edu">JNBAS@alumni.CMU.EDU</a></span></h1>
+                </div>
+
+                <div style="padding-bottom: 4rem;"></div>
+
+                <span class="text primary-txt-color">
+                    Heyo! I am a recent graduate from CMU and interested in that middle-ground between software and hardware, although lately I've been taking on hardware projects. I've had experience working with C/C++, Python, and some other high-level programming languages, and on the other side of the abstraction, I'm also developing my skills in ARM Assembly, RISC-V Assembly, and reading ISAs. I think FPGA's are pretty cool, and I get excited whenever I have the chance to use them. I've spent a summer and a semester honing my PCB design skills through a medical device internship, and I expect to continue to do so in future projects!
+                </span>
+
+                <div class="social-icons">
+                    <a class="content-link content-link-hover" href="https://github.com/JBas">
+                        <i class="fab fa-github-square"></i>
+                    </a>
+                    <a class="content-link content-link-hover" href="https://trailblazer.me/id/jnbas">
+                        <i class="fab fa-salesforce"></i>
+                    </a>
+                    <a class="content-link content-link-hover" href="https://www.linkedin.com/in/jnbas/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section" id="experiences">
+                <h2 class="title-h2 secondary-txt-color" style="padding-bottom: 3.75rem;">Experience</h2>
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <h3 class="title-h3 secondary-txt-color">3D PRINTING ERROR DETECTION SYSTEM</h3>
+                        <h3 class="subtitle-h3 primary-txt-color">Capstone Project</h3>
+                        <span class="text primary-txt-color">
+                            My capstone group and I are building a detection system for 3D prints this semester! I'm in charge of the power management subsystem for the single board computer (SBC), and I also help out with embedded programming! <a class="content-link content-link-hover" href="http://course.ece.cmu.edu/~ece500/projects/s20-teame1/">Here's the link to the capstone blog for continuous updates!</a>
+                        </span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">January 2020 - May 2020</span>
+                    </div>
+                </div>
+
+                <div style="padding-bottom: 5rem;"></div>
+
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <h3 class="title-h3 secondary-txt-color">Audition Technology</h3>
+                        <h3 class="subtitle-h3 primary-txt-color">Analog Engineer Intern</h3>
+                        <span class="text primary-txt-color">
+                            In my role as analog engineer intern at Audition Technology, I have gained experience in the development cycle. Most of my internship during the summer months focused on researching and comparing DSP chips the startup can incorporate into its first prototype. In addition to communicating with the DSP team, I created a list of requirements to design a custom development board, which was realized using EagleCAD. After learning from my mistakes on this first board, I proposed, designed, and implemented a modular system where the "motherboard" contained the power management system and the IO breakout pins, while the "daughterboard" contained the specific chip to be tested. During this internship, I also learned more about the Bluetooth Low Energy technology available for small medical devices, and more generally about the hearing aid medical industry. Aside from employing technical skills, I participated in meetings with the CFOs and medical advisor, and also partook in a tour of the facilities of a potential manufacturer.
+                        </span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">June 2019 - May 2020</span>
+                    </div>
+                </div>
+
+                <div style="padding-bottom: 5rem;"></div>
+
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <h3 class="title-h3 secondary-txt-color">CMU Mars Ice</h3>
+                        <h3 class="subtitle-h3 primary-txt-color">Club Project</h3>
+                        <span class="text primary-txt-color">
+                            My involvement in the design of the CMU drilling robot for the NASA Mars Ice Challenge includes creating design blocks in EagleCAD as well as selecting and testing components; this culminated in my design and assembly of the robot's encoder interface pcb. I also spearheaded the design and development of the software that controlled and monitored the robot (everything in src/ except client-side code). This included interfacing with the robot's thermometer, ammeter, water level sensor, force sensor, and encoder data. Some challenges encountered during the software development included only having about 3 weeks to implement, unit test, and integration test; however, we were able to produce a minimum viable product that successfully interpreted and executed a subset of our desired commands.
+                        </span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">October 2018 - June 2019</span>
+                    </div>
+                </div>
+
+                <div style="padding-bottom: 5rem;"></div>
+
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <h3 class="title-h3 secondary-txt-color">SDRAM Controller</h3>
+                        <h3 class="subtitle-h3 primary-txt-color">Logic Design and Verification Lab</h3>
+                        <span class="text primary-txt-color">
+                            I designed a memory controller for the 64MB, 4-banked IS42S16320D SDRAM in SystemVerilog, using VCS and Altera Quartus to debug and download onto the Cyclone V FPGA.
+                        </span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">November 2018</span>
+                    </div>
+                </div>
+
+                <div style="padding-bottom: 5rem;"></div>
+
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <h3 class="title-h3 secondary-txt-color">Tiny Shell Implementation</h3>
+                        <h3 class="subtitle-h3 primary-txt-color">Intro to Computer Systems Lab</h3>
+                        <span class="text primary-txt-color">
+                            I implemented a tiny shell capable of command execution, foreground and background jobs, and IO redirection.
+                        </span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">July 2018</span>
+                    </div>
+                </div>
+
+                <div style="padding-bottom: 5rem;"></div>
+
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <h3 class="title-h3 secondary-txt-color">Malloc Implementation</h3>
+                        <h3 class="subtitle-h3 primary-txt-color">Intro to Computer Systems Lab</h3>
+                        <span class="text primary-txt-color">
+                            I implemented the malloc, calloc, and realloc memory allocation functions in C. My malloc uses a segregated free list and a fitness algorithm that approximates best fit performance.
+                        </span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">July 2018</span>
+                    </div>
+                </div>
+
+                <div style="padding-bottom: 5rem;"></div>
+
+                <div class="section-wrapper">
+                    <div class="section-content" style="padding: 0;">
+                        <h3 class="title-h3 secondary-txt-color">Image Hill Climber</h3>
+                        <h3 class="subtitle-h3 primary-txt-color">Personal Project</h3>
+                        <span class="text primary-txt-color">
+                            In an effort to learn more about genetic algorithms and hill climber algorithms, I designed a population that attempts to reconstruct a given image from polygons with at least N (user-defined) vertices using a range of RGBA values. Implemented originally in plain Java and later refactored in Processing, the program compares the current and target image on a per-pixel basis. Although I enjoy coming back to this project every so often, after seeing my initial results, I learned that genetic and hill climbing algorithms are not the most efficient nor do they always find global maxima.
+                        </span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">August 2017</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section" id="education">
+                <h2 class="title-h2 secondary-txt-color" style="padding-bottom: 3.75rem;">Education</h2>
+                <div class="section-wrapper">
+                    <div class="section-content">
+                        <h3 class="title-h3 secondary-txt-color">Carnegie Mellon University</h2>
+                            <h3 class="subtitle-h3 primary-txt-color">Pittsburgh, PA</h3>
+                            <span class="text primary-txt-color">Bachelor of Science in Electrical & Computer Engineering</span>
+                    </div>
+                    <div class="section-date">
+                        <span class="text primary-txt-color">August 2016 - May 2020</span>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="section" id="skills">
+                <h2 class="title-h2 secondary-txt-color" style="padding-bottom: 3.75rem;">Skills</h2>
+
+                <ul>
+
+                    <li style="display: inline-block; vertical-align: top;">
+                        <span>Programming Skills</span>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">C/C++</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">GDB (debugger)</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">Valgrind (memory debugger)</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">ARM Assembly</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">Altera Quartus</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">Java/Processing</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">MatLab</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">Python</span></li>
+                        </ul>
+                    </li>
+
+                    <li style="display: inline-block; vertical-align: top;">
+                        <span>Hardware Skills</span>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">SystemVerilog</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">VCS (Verilog simulator)</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">EagleCAD</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">circuit analysis</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">soldering</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">oscilloscopes & multimeters</span></li>
+                        </ul>
+                    </li>
+
+
+                    <li style="display: inline-block; vertical-align: top;">
+                        <span>Other Skills</span>
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">Git/Github</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">SolidWorks</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">MS Office</span></li>
+                            <li><span class="fa-li"><i class="fas fa-hammer"></i></span><span class="text primary-txt-color">Proficient in Spanish</span></li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+            <hr>
+
+            <div class="section" id="publications">
+                <h2 class="title-h2 secondary-txt-color" style="padding-bottom: 3.75rem;">Publications</h2>
+
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fas fa-file"></i></span>
+                        <span class="text primary-txt-color">Development of Hearing Technology with Personalized Safe Listening Features. Gupta, S.; Xu, X.; Liu, H.; Zhang, J.; <span style="font-weight: bold">Bas, J.</span>; Kelly, S. <a class="content-link content-link-hover accent-txt-color" style="text-decoration: underline" href="https://www.itu.int/pub/T-PROC-KALEI-2019">2019 ITU Kaleidoscope Conference Proceedings</a>.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <div class="section" id="interests">
+                <h2 class="title-h2 secondary-txt-color" style="padding-bottom: 3.75rem;">Interests</h2>
+                <span class="text primary-txt-color">
+                    Whenever I am not working hard on projects, I enjoy reading and learning about other cultures, especially how their religions have affected history and society.
+
+                    I also make time to help my community and develop my leadership skills. I have taken service trips to the Kusi Orphanage in Yungay, Peru and the Pilar de Esperanza orphanage in Reynosa, Mexico. In the US, I went with Tartan Athlete Fellowship to West Virginia to help rebuild the roof of an elderly woman's home, and have worked in Pittsburgh in my local youth program.
+                </span>
+            </div>
+        </div>
+    </div>
+
+</body></html>
